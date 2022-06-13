@@ -34,14 +34,14 @@ function UserDetail() {
       ?<Loader />
       :(!currentUser?<UserPlaceHolder />: <UserCard data={currentUser}/>)
       }
-      <h2 className=' ml-2 nav-header'>User's</h2>
-      {
+      <h2 className=' mt-4 ml-2 nav-header text-center'>User's</h2>
+      <div className="text-center">{
         usersFromStore.map((user,id)=>{
           return <span key={id}>
             <button className='btn btn-primary user-button m-2' type='button' onClick={()=>handleSingleUserRequest(id+1)} >{id+1}</button>
           </span>
         })
-      }
+      }</div> 
     </div>
   )
 }

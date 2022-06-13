@@ -5,28 +5,52 @@
 }
 
 .user-detail {
-  background-color: #f4dcec;
+  background-color: #320d3e;
+  color: white;
 }
 
 .select-user-card {
-  height: 318px;
+  height: 304px;
 }
 
-.fetching-data {
-  background: url(../public/Page\ 1.svg);
-  /* background-repeat: no-repeat; */
-  object-fit: contain;
-  /* background-position: center center; */
-  height: 320px;
-  width: 909px;
+.lds-circle {
+  display: inline-block;
+  transform: translateZ(1px);
+}
+.lds-circle > div {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  background: #320d3e;
+  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
 }
 
 .user-card-dashboard {
   font-family: "Dosis", sans-serif;
   font-weight: 300;
+  border: 3px solid #320d3e;
 }
 .user-details-img{
-  background-color: #320d3e;
+  /* background-color: #320d3e; */
+
+  border: 0px 3px 3px 3px solid #320d3e;
 }
 .user-button {
   cursor: pointer;
