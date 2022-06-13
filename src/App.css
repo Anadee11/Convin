@@ -1,0 +1,50 @@
+.nav-header {
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 900;
+  color: #320d3e;
+}
+
+.user-detail {
+  background-color: #f4dcec;
+}
+
+.select-user-card {
+  height: 318px;
+}
+
+.fetching-data {
+  background: url(../public/Page\ 1.svg);
+  /* background-repeat: no-repeat; */
+  object-fit: contain;
+  /* background-position: center center; */
+  height: 320px;
+  width: 909px;
+}
+
+.user-card-dashboard {
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
+}
+.user-details-img{
+  background-color: #320d3e;
+}
+.user-button {
+  cursor: pointer;
+  background-color: #320d3e;
+  color: #ffffff;
+  border: 1px solid #320d3e;
+}
+
+.user-button:active {
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #320d3e;
+  color: #320d3e;
+}
+
+.user-button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #320d3e;
+  color: #320d3e;
+}
